@@ -1,4 +1,3 @@
-# Diabetes-prediction-linear-regression
 # Diabetes Prediction using Linear Regression
 
 This project uses a linear regression model to predict diabetes based on health metrics.
