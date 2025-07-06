@@ -60,29 +60,17 @@ Confusion Matrix:
 [[85, 15],
  [13, 57]]
 ```
-▶️ Running Process
-✅ Option 1: Google Colab
+## ▶️ Running Process
 
-    Open Google Colab
+### ✅ Steps to Run the Project
 
-    Upload:
-
-        diabetes.csv
-
-        or open the shared notebook: diabetes-linear-regression.ipynb
-
-    Run all cells step by step:
-
-        Preprocessing the dataset
-
-        Splitting into training/test sets
-
-        Training the Linear Regression model
-
-        Rounding predictions to 0 or 1
-
-        Evaluating model performance
-
-✅ Option 2: Local Jupyter Notebook
-
-    Clone the repository:
+1. Open [Google Colab](https://colab.research.google.com)
+2. Upload the following files:
+   - `diabetes.csv` (dataset)
+   - `diabetes-linear-regression.ipynb` (notebook)
+3. Run the notebook step by step:
+   - Preprocess the data
+   - Replace missing or zero values
+   - Apply Linear Regression model
+   - Round predictions to 0 or 1
+   - Evaluate using accuracy, precision, recall, F1-score, and confusion matrix
