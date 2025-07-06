@@ -1,26 +1,63 @@
-# Diabetes Prediction using Linear Regression
 
-This project uses a linear regression model to predict diabetes based on health metrics.
+# 🩺 Diabetes Prediction using Linear Regression
 
-## 🔍 Steps Followed
+This project uses **Linear Regression** to predict whether a patient is diabetic (Outcome = 1) or not (Outcome = 0) based on various medical features.
 
-1. **Preprocessing**
-   - Replaced 0s with median in Glucose, BP, etc.
-   - First row's glucose = max glucose
-   - Rows with min age = min glucose
+---
 
-2. **Model**
-   - Linear Regression
-   - Rounded predictions to 0 or 1
+## 📁 Dataset
 
-3. **Evaluation**
-   - Accuracy, Confusion Matrix
-   - Precision, Recall, F1 Score
+- Source: `diabetes.csv`
+- Contains 768 records with 8 features and 1 label (`Outcome`).
 
-## 📁 Files
+| Feature               | Description                           |
+|------------------------|---------------------------------------|
+| Pregnancies           | Number of times pregnant              |
+| Glucose               | Plasma glucose concentration          |
+| BloodPressure         | Diastolic blood pressure              |
+| SkinThickness         | Triceps skin fold thickness           |
+| Insulin               | 2-Hour serum insulin                  |
+| BMI                   | Body mass index                       |
+| DiabetesPedigreeFunction | Diabetes pedigree function        |
+| Age                   | Age in years                          |
+| Outcome               | 1 = diabetic, 0 = not diabetic        |
 
-- `diabetes.csv` - Dataset
-- `diabetes-linear-regression.ipynb` - Colab notebook
+---
 
-## 📊 Sample Output
+## 🧪 Preprocessing Steps
+
+1. **Replace 0 values** in:  
+   `Glucose`, `BloodPressure`, `SkinThickness`, `Insulin`, and `BMI` with the **column median**.
+
+2. **Replace first row's glucose** with the **maximum** glucose value from the dataset.
+
+3. For all rows with the **minimum age**, replace their glucose values with the **minimum** glucose value.
+
+---
+
+## 🧠 Model Used
+
+- **Linear Regression** from `sklearn.linear_model`
+- Prediction output was **rounded** to 0 or 1 to perform binary classification.
+
+---
+
+## 📊 Evaluation Metrics
+
+- **Accuracy**
+- **Confusion Matrix**
+- **Precision**
+- **Recall**
+- **F1-Score**
+
+Sample Output:
+```text
+Accuracy: 0.76
+Precision: 0.79
+Recall: 0.74
+F1 Score: 0.76
+Confusion Matrix:
+[[85, 15],
+ [13, 57]]
+
 
