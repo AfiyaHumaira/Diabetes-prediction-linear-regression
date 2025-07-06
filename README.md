@@ -59,4 +59,30 @@ F1 Score: 0.76
 Confusion Matrix:
 [[85, 15],
  [13, 57]]
+```
+▶️ Running Process
+✅ Option 1: Google Colab
 
+    Open Google Colab
+
+    Upload:
+
+        diabetes.csv
+
+        or open the shared notebook: diabetes-linear-regression.ipynb
+
+    Run all cells step by step:
+
+        Preprocessing the dataset
+
+        Splitting into training/test sets
+
+        Training the Linear Regression model
+
+        Rounding predictions to 0 or 1
+
+        Evaluating model performance
+
+✅ Option 2: Local Jupyter Notebook
+
+    Clone the repository:
